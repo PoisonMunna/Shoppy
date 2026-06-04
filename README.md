@@ -1,6 +1,6 @@
 # 🌌 Shoppy (E-Commerce Store)
 
-Shoppy is a premium, next-generation e-commerce web application featuring a futuristic obsidian dark-theme, cyan/pink neon accents, and responsive layout styling. Designed for showcase hardware and peripherals, it integrates a Node.js/Express REST API, a MongoDB database, robust validation schemas, and a resilient, developer-friendly **local sandbox failover system**.
+Shoppy is a premium, next-generation e-commerce web application featuring a futuristic obsidian dark-theme, cyan/pink neon accents, and responsive layout styling. It integrates a Node.js/Express REST API, a MongoDB database, robust validation schemas, and a resilient, developer-friendly **local sandbox failover system**.
 
 ---
 
