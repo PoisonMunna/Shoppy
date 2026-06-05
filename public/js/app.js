@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let products = [];
   let cart = JSON.parse(localStorage.getItem('aethera_cart')) || [];
   let currentUser = JSON.parse(sessionStorage.getItem('aethera_user')) || null;
-  const API_BASE = window.location.port === '5000' ? '' : 'https://shoppy-nu-ten.vercel.app';
+  const API_BASE = window.location.port === '5000' ? '' : 'http://localhost:5000';
 
   // DOM Elements
   const header = document.getElementById('header');
