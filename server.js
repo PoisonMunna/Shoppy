@@ -14,7 +14,7 @@ dotenv.config();
 const app = express();
 
 // Standard Middleware
-app.use(cors({ origin: process.env.CLIENT_URL || '*' }));
+app.use(cors());
 app.use(express.json());
 
 // Resolve paths for serving static files in ES modules
@@ -379,9 +379,10 @@ app.get('/api/admin/orders', async (req, res) => {
 });
 
 // Serve frontend SPA (Fallback)
-app.get('/*splat', (req, res) => {
+app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
+
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
