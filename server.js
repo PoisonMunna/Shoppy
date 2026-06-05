@@ -14,7 +14,7 @@ dotenv.config();
 const app = express();
 
 // Standard Middleware
-app.use(cors());
+app.use(cors({ origin: process.env.CLIENT_URL || '*' }));
 app.use(express.json());
 
 // Resolve paths for serving static files in ES modules
